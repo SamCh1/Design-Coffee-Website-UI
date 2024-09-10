@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Trang danh sách</title>
+  </head>
+  <body>         
+    <!--Header-->
+    <div class="header">
+      <div class="container">
+        <div class="header__wrap">
+          <div class="header__icon-menu"><i class="fa-solid fa-bars"></i></div>
+          <div class="header__logo"><a href="/"><img src="assets/image/logo2.png" alt="Monitor"></a></div>
+          <nav class="header__menu">
+            <ul>
+              <li><a href="/">Trang chủ</a></li>
+              <li><a href="#">Danh mục</a></li>
+              <li><a href="#">Giới thiệu</a></li>
+              <li><a href="#">Liên hệ</a></li>
+            </ul>
+          </nav>
+          <div class="header__search">
+            <form action="">
+              <input type="text" placeholder="Nhập từ khoá...">
+              <button> <i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+          </div>
+          <div class="header__button"><a class="btn" href="#">Tham gia cộng đồng</a></div>
+          <div class="header__icon-search"><i class="fa-solid fa-magnifying-glass">     </i></div>
+        </div>
+      </div>
+    </div>
+    <!--End-header-->
+    <!--Trang chi tiết sản phẩm-->
+    <!-- khai báo data dùng mixin product-item-->
+    <!--breadscrum-->
+    <div class="breadscrum">
+      <div class="container">
+        <div class="breadscrum__wrap"><a class="breadscrum__link" href="#">Trang chủ</a><a class="breadscrum__link" href="#">Cà phê</a><a class="breadscrum__link" href="#">Loại Cappucino</a></div>
+      </div>
+    </div>
+    <!--End breadscrum-->
+    <!--section 3-->
+    <!--section 3-->
+    <div class="section-3">
+      <div class="container">
+        <div class="section-3__wrap">
+          <div class="section-3__img" data-aos="fade-right" data-aos-duration="1500"><img src="assets/image/bg5.png" alt=""/></div>
+          <div class="section-3__content" data-aos="fade-left" data-aos-duration="1500">
+            <h2 class="section-3__title">NEW <br> FLAVOURS <br> FREE TASTING</h2>
+            <h3 class="section-3__sub-title">INDIAN / AFRICAN / PERU </h3>
+            <p class="section-3__desc">The passage experienced a surge in popularity during the 1960s when used.</p>
+            <div class="section-3__button"><a class="btn btn--outline" href="#">Giới thiệu <i class="fa-regular fa-circle-play"></i></a><a class="btn" href="#">Lựa Chọn</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End section 3   -->
+    <!--End section 3-->
+    <!--layout product-->
+    <div class="layout-product">
+      <div class="container">
+        <div class="layout-product__wrap">
+          <div class="layout-product__left">
+            <div class="filter">
+              <div class="filter__title"><i class="fa-solid fa-filter"></i><span>Bộ lọc</span></div>
+              <div class="filter__list">
+                <div class="filter__item">
+                  <div class="filter__item-title">Cà phê</div>
+                  <div class="filter__item-box">
+                    <div class="filter__item-choose">
+                      <input type="checkbox" name="coffee" value="americano" id="americano">
+                      <label for="americano">Americano</label>
+                    </div>
+                    <div class="filter__item-choose">
+                      <input type="checkbox" name="loại" value="capucino" id="capucino">
+                      <label for="capucino">Capuccino</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter__item">
+                  <div class="filter__item-title">Ô long MATCHA</div>
+                  <div class="filter__item-box">
+                    <div class="filter__item-choose">
+                      <input type="checkbox" name="tea" value="olongsua" id="olongsua">
+                      <label for="olongsua">Ô long Fa</label>
+                    </div>
+                    <div class="filter__item-choose">
+                      <input type="checkbox" name="tea" value="matcha" id="matcha">
+                      <label for="matcha">Matcha nguyên bản</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter__item">
+                  <div class="filter__item-title">Topping</div>
+                  <div class="filter__item-box">
+                    <div class="filter__item-choose">
+                      <input type="checkbox" name="topping" value="black_bubble" id="black_bubble">
+                      <label for="black_bubble">Trân châu đường đen</label>
+                    </div>
+                    <div class="filter__item-choose">
+                      <input type="checkbox" name="topping" value="royal_bubble" id="royal_bubble">
+                      <label for="royal_bubble">Trân châu hoàng gia</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="layout-product__right">           
+            <div class="section-5">
+              <div class="section-5__head">
+                <div class="section-5__title">Cà phê</div>
+                <button class="section-5__button-filter"><i class="fa-solid fa-filter"></i><span>Bộ lọc</span></button>
+              </div>
+              <div class="section-5__wrap">
+                <div class="product-item product-item--three">
+                  <div class="product-item__img"><img loading="lazy" src="https://chillaxrestaurant.co.nz/wp-content/uploads/2023/09/coffee-brain-caffeine-neuroscincces.webp" alt="CF01-Cappucino"/></div>
+                  <div class="product-item__content">
+                    <h3 class="product-item__title"><a href="#">CF01-Cappucino</a></h3>
+                    <div class="product-item__meta">
+                      <div class="product-item__meta-item"><span>Origin:</span><strong>American</strong></div>
+                      <div class="product-item__meta-item"><span>Year:</span><strong>2024</strong></div>
+                    </div>
+                    <div class="product-item__price">4.000.000 VND</div>
+                  </div>
+                </div>
+                <div class="product-item product-item--three">
+                  <div class="product-item__img"><img loading="lazy" src="https://lifeboostcoffee.com/cdn/shop/articles/1445732_Highelevationcoffeebeans_NoLogo_SteamingCupOfCoffee4_090222.jpg?v=1664805147" alt="CF01-Cappucino"/></div>
+                  <div class="product-item__content">
+                    <h3 class="product-item__title"><a href="#">CF01-Cappucino</a></h3>
+                    <div class="product-item__meta">
+                      <div class="product-item__meta-item"><span>Origin:</span><strong>American</strong></div>
+                      <div class="product-item__meta-item"><span>Year:</span><strong>2024</strong></div>
+                    </div>
+                    <div class="product-item__price">4.000.000 VND</div>
+                  </div>
+                </div>
+                <div class="product-item product-item--three">
+                  <div class="product-item__img"><img loading="lazy" src="https://hips.hearstapps.com/hmg-prod/images/dalgona-coffee-a-trendy-fluffy-creamy-whipped-royalty-free-image-1608301380." alt="CF01-Cappucino"/></div>
+                  <div class="product-item__content">
+                    <h3 class="product-item__title"><a href="#">CF01-Cappucino</a></h3>
+                    <div class="product-item__meta">
+                      <div class="product-item__meta-item"><span>Origin:</span><strong>American</strong></div>
+                      <div class="product-item__meta-item"><span>Year:</span><strong>2024</strong></div>
+                    </div>
+                    <div class="product-item__price">4.000.000 VND</div>
+                  </div>
+                </div>
+                <div class="product-item product-item--three">
+                  <div class="product-item__img"><img loading="lazy" src="https://i.pinimg.com/originals/de/f6/25/def6256dd843a72f7ab758358cf57f2d.jpg" alt="CF01-Cappucino"/></div>
+                  <div class="product-item__content">
+                    <h3 class="product-item__title"><a href="#">CF01-Cappucino</a></h3>
+                    <div class="product-item__meta">
+                      <div class="product-item__meta-item"><span>Origin:</span><strong>American</strong></div>
+                      <div class="product-item__meta-item"><span>Year:</span><strong>2024</strong></div>
+                    </div>
+                    <div class="product-item__price">4.000.000 VND</div>
+                  </div>
+                </div>
+                <div class="product-item product-item--three">
+                  <div class="product-item__img"><img loading="lazy" src="https://www.shutterstock.com/image-photo/still-life-photography-hot-coffee-260nw-298821158.jpg" alt="CF01-Cappucino"/></div>
+                  <div class="product-item__content">
+                    <h3 class="product-item__title"><a href="#">CF01-Cappucino</a></h3>
+                    <div class="product-item__meta">
+                      <div class="product-item__meta-item"><span>Origin:</span><strong>American</strong></div>
+                      <div class="product-item__meta-item"><span>Year:</span><strong>2024</strong></div>
+                    </div>
+                    <div class="product-item__price">4.000.000 VND</div>
+                  </div>
+                </div>
+                <div class="product-item product-item--three">
+                  <div class="product-item__img"><img loading="lazy" src="https://live.staticflickr.com/65535/53681260520_cd7288f9bc_k.jpg" alt="CF01-Cappucino"/></div>
+                  <div class="product-item__content">
+                    <h3 class="product-item__title"><a href="#">CF01-Cappucino</a></h3>
+                    <div class="product-item__meta">
+                      <div class="product-item__meta-item"><span>Origin:</span><strong>American</strong></div>
+                      <div class="product-item__meta-item"><span>Year:</span><strong>2024</strong></div>
+                    </div>
+                    <div class="product-item__price">4.000.000 VND</div>
+                  </div>
+                </div>
+                <div class="product-item product-item--three">
+                  <div class="product-item__img"><img loading="lazy" src="https://static.toiimg.com/thumb/88316599.cms?imgsize=63826&amp;width=800&amp;height=800" alt="CF01-Cappucino"/></div>
+                  <div class="product-item__content">
+                    <h3 class="product-item__title"><a href="#">CF01-Cappucino</a></h3>
+                    <div class="product-item__meta">
+                      <div class="product-item__meta-item"><span>Origin:</span><strong>American</strong></div>
+                      <div class="product-item__meta-item"><span>Year:</span><strong>2024</strong></div>
+                    </div>
+                    <div class="product-item__price">4.000.000 VND</div>
+                  </div>
+                </div>
+                <div class="product-item product-item--three">
+                  <div class="product-item__img"><img loading="lazy" src="assets/image/blog-3.jpeg" alt="CF01-Cappucino"/></div>
+                  <div class="product-item__content">
+                    <h3 class="product-item__title"><a href="#">CF01-Cappucino</a></h3>
+                    <div class="product-item__meta">
+                      <div class="product-item__meta-item"><span>Origin:</span><strong>American</strong></div>
+                      <div class="product-item__meta-item"><span>Year:</span><strong>2024</strong></div>
+                    </div>
+                    <div class="product-item__price">4.000.000 VND</div>
+                  </div>
+                </div>
+              </div>
+              <!--End section 5 -->
+              <!--pagination -->
+            </div>
+            <div class="pagination">
+              <ul class="pagination__list">
+                <li class="pagination__item"><a class="pagination__link" href="#"><i class="fa-regular fa-circle-left" style="color: #FFD43B;"></i></a></li>
+                <li class="pagination__item"><a class="pagination__link pagination__link--active" href="#">1</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">...</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">28</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#"><i class="fa-regular fa-circle-right" style="color: #FFD43B;"></i></a></li>
+              </ul>
+            </div>
+            <!-- End pagination-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <div class="footer">
+      <div class="footer__top">
+        <div class="footer__top-content">Register now to not miss our promotions</div>
+        <div class="footer__top-form">
+          <form action="">
+            <input type="email" placeholder="Entry your email..." name="email">
+            <button>Register Now</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__middle">
+        <div class="footer__middle-menu"><a href="#">Trang chủ</a><a href="#">Danh mục</a><a href="#">Giới thiệu</a><a href="#">Liên hệ</a></div>
+        <div class="footer__middle-socials"><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a><a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a><a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a></div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-copyright">@2024 Sâm.All rights reserved</div>
+        <div class="footer__bottom-logo"><a href="#"><img src="assets/image/logo2.png" alt=""></a></div>
+        <div class="footer__bottom-right"><a href="#">Điều khoản dịch vụ</a><a href="#">Chính sách bảo mật</a></div>
+      </div>
+    </div>
+    <!--End footer-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.js"> </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/aos.js"></script>
+  </body>
+</html>
